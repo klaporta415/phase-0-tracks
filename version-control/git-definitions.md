@@ -10,3 +10,5 @@ A branch is a file off of the master where features of the file will be worked o
 A commit saves changes made in a branch or file. A good commit message is detailed and explains what changes or additions were made.
 * What is a merge conflict?
 A merge conflict happens when conflicting actions are taken on the same file- such as one developer deletes a file and another makes changes and commits them to that file. When merging these branches, Git will not know which to merge and the conflict will need to be resolved. 
+
+* Hey Emmanuel, I made a change to this file.
