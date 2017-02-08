@@ -7,3 +7,6 @@
 .ul{
 	font-size: .8em;
 }
+.email:hover {
+	color: red;
+}
