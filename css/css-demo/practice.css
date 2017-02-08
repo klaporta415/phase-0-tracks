@@ -10,3 +10,6 @@
 .email:hover {
 	color: red;
 }
+.volunteer-gig:last-child {
+	color: blue;
+}
