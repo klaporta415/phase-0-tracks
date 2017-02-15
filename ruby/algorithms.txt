@@ -1,3 +1,4 @@
+Robot using an elevator:
 1. Find the elevator inside the building.
 
 2. Press the up button near the elevator.
@@ -19,3 +20,42 @@
 
 8. Proceed to the room number of your destination.
 	Navigation? Building blueprint/map?
+
+Human making coffee:
+1. Decide how much coffee you want to drink
+	How many people are drinking your coffee?
+	Does your wife want some?
+2. Measure out corresponding amount of water to the number of cups desired.
+3. Pour water into kettle.
+4. Turn burner on and place kettle on top.
+5. Measure out coffee beans.
+	One tablespoon for every 4oz of coffee desired.
+6. Put measured out coffee beans into coffee bean grinder.
+
+7. Grind coffee beans.
+
+8. Place coffee filter in pour over device.
+
+9. Put new coffee ground into coffee filter in the pour over device.
+
+10. Wait until the water is hot
+	Steam will come from the top of the kettle once the water is hot enough.
+
+11. Pour hot water over coffee grounds.
+	Do not over fill.
+
+12. Pour all water from the kettle over the coffee grounds.
+	With breaks in between pouring so you don’t overflow the pour over device or coffee filter.
+
+13. Wait until coffee stops dripping from the pour over device.
+
+14. Discard used coffee filter with used coffee grounds inside into the garbage can.
+
+15. Pour coffee into coffee mug.
+	Pour coffee into more than one mug if more than just you wants coffee.
+
+16. Add desired cream and/or sugar to coffee(s)
+
+17. Stir if cream and/or sugar are added.
+
+18. Drink coffee.
