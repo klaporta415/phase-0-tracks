@@ -1,0 +1,21 @@
+1. Find the elevator inside the building.
+
+2. Press the up button near the elevator.
+	Up button noted with an up arrow or triangle shape.
+	Button is activated when lit up.
+
+3. Wait for elevator to arrive and elevator doors to open.
+
+4. When elevator doors open, enter the elevator.
+
+5. Press the button with the number of the corresponding floor you’re going to.
+	The floor you’re going to has been entered by your human master.
+	The floor you’re going to is the first number or two in the room number you’re going to. One number if the room number is three numbers long, two numbers if the room number is four numbers long.
+
+6. Stay inside the elevator until you reach the floor you are going to.
+	The floor number will be noted by a number seen inside the elevator or said aloud.
+
+7. Once the elevator doors open, exit elevator.
+
+8. Proceed to the room number of your destination.
+	Navigation? Building blueprint/map?
