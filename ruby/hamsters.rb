@@ -33,3 +33,5 @@ def age_estimator
 		return nil
 end
 end
+
+puts "Hamster's name is: #{hamster_name}, its volume level is #{volume_level}, its fur color is #{fur_color}, good for adoption: #{adoption}, age estimated to be: #{age}."
