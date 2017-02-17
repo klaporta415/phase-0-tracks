@@ -38,12 +38,13 @@ end
 # decrypt("bcd")
 # decrypt("afe")
 # decrypt(encrypt("swordfish"))
+#decrypt/encrypt nesting is useful for seeing both the password encrypted and the original password because both will print.
 
 # Ask agent if they want to encrypt/decrypt password
 # Ask agent for password
 # Encrypt or decrypt password based on user input
 
-puts "Would you like to decrypt or encrypt a password?"
+puts "Would you like to encrypt or decrypt a password?"
 password_scrambler = gets.chomp
 puts "Enter password"
 agent_password = gets.chomp
