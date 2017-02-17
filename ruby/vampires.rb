@@ -35,12 +35,28 @@ needs_insurance = gets.chomp
 	end
 
 
+puts "Please list your allergies and enter them one at a time. Type 'done' when you are finished."
+allergies = gets.chomp
+	if allergies == "sunshine"
+		sunshine_allergy = true	
+	end
+	loop do 
+		puts "Any other allergies?"
+		multiple_allergies = gets.chomp
+		if multiple_allergies == "done"
+			break
+		end
+	end		
+		
+
 if age == (current_year - birth_year) && (garlic_affinity || health_insurance_seeker)
 	puts "Probably not a vampire."
 elsif age != (current_year - birth_year) && (!garlic_affinity || !health_insurance_seeker)
 	puts "Almost certainly a vampire."
 elsif name = "Drake Cula" || "Tu Fang"
 	puts "Definitely a vampire!"
+elsif sunshine_allergy
+	puts "Definitely a vampire."
 else
 	puts "Results inconclusive."
 end
