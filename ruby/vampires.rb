@@ -1,5 +1,8 @@
 puts "How many employees will you be processing today?"
-employees_process = gets.to_i
+new_employees = gets.to_i
+
+while new_employees > 0	
+	new_employees += -1
 
 puts "What is your name?"
 name = gets.chomp
@@ -31,6 +34,7 @@ needs_insurance = gets.chomp
 		puts "Please answer yes or no."
 	end
 
+
 if age == (current_year - birth_year) && (garlic_affinity || health_insurance_seeker)
 	puts "Probably not a vampire."
 elsif age != (current_year - birth_year) && (!garlic_affinity || !health_insurance_seeker)
@@ -39,4 +43,5 @@ elsif name = "Drake Cula" || "Tu Fang"
 	puts "Definitely a vampire!"
 else
 	puts "Results inconclusive."
+end
 end
