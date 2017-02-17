@@ -56,8 +56,10 @@ elsif age != (current_year - birth_year) && (!garlic_affinity || !health_insuran
 elsif name = "Drake Cula" || "Tu Fang"
 	puts "Definitely a vampire!"
 elsif sunshine_allergy
-	puts "Definitely a vampire."
+	puts "Probably a vampire."
 else
 	puts "Results inconclusive."
 end
 end
+
+puts "Actually, never mind! What do these questions have to do with anything? Let's all be friends."
