@@ -1,3 +1,6 @@
+puts "How many employees will you be processing today?"
+employees_process = gets.to_i
+
 puts "What is your name?"
 name = gets.chomp
 
