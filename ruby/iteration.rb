@@ -5,3 +5,19 @@ def practice_method
 end
 
 practice_method { |status| puts "status: #{status}"}
+
+
+actors = [ "Julia Roberts", "Tom Hanks", "Mel Gibson" ]
+	actors.each do |actor|
+		puts actor
+	end
+	actors.map! do |lower_case|
+		puts lower_case.downcase
+end
+
+
+actors_movies = {
+	"Julia Roberts" => "Pretty Woman" 
+	"Tom Hanks" => "Forrest Gump"
+	"Mel Gibson" => "Lethal Weapon"
+}
