@@ -17,7 +17,10 @@ end
 
 
 actors_movies = {
-	"Julia Roberts" => "Pretty Woman" 
-	"Tom Hanks" => "Forrest Gump"
-	"Mel Gibson" => "Lethal Weapon"
-}
+	"Julia Roberts" => "Pretty Woman", 
+	"Tom Hanks" => "Forrest Gump",
+	"Mel Gibson" => "Lethal Weapon"}
+	
+actors_movies.each do |actor, movie|
+	puts "#{actor} was in #{movie}"
+end
