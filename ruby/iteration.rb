@@ -48,8 +48,15 @@
 
 array2 = [ "orange", "green", "blue", "red", "yellow", "aqua"]
 
-array2.each do |colors|
- 	colors.length
+# array2.map do |colors| 	
+until array2.length == 2
+	array2.delete_at(-1)
+end
+p array2
+
+
+# end
+
   # p colors.length
   # good_length = 4 
   # if colors.length > good_length
