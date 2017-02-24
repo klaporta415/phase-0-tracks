@@ -43,9 +43,9 @@ client_info[:difficult] = difficult_client
 # print updated hash
 p client_info
 
-puts "Any updates? (enter 'none' to confirm)"
+puts "Any updates? (enter 'yes' to edit OR none' to confirm)"
 designer_edit = gets.chomp
-if designer_edit == "y"
+if designer_edit == "yes"
 	puts "Please enter the label you would like to change followed by the correct information."
 	client_info[gets.chomp.to_sym] = gets.chomp
 elsif designer_edit == "none"
