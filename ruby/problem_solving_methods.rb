@@ -1,0 +1,30 @@
+# define a method search_array
+# method takes an array as an argument
+	# method can take an integer to search for as an argument
+
+# def search_array(arr, x)
+#   idx = 0 
+#   default = nil
+#   arr.each do 
+#     if x == arr[idx]
+#       default = idx
+#     end
+#     idx += 1
+#   end
+#   return default 
+# end
+  
+# arr = [42, 89, 23, 1]
+
+# p search_array(arr, 58)
+# p search_array(arr, 42)
+
+fib = [0, 1]
+
+fib.push(array_sum)
+
+# def fibonacci( n )
+#   return  n  if ( 0..1 ).include? n
+#   ( fibonacci( n - 1 ) + fibonacci( n - 2 ) )
+# end
+# puts fibonacci( 5 )
