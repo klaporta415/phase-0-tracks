@@ -3,7 +3,8 @@ puts "Enter name, please:"
 # swaps first and last name
 	# need to .split to rearrange first/last name?
 birthname = gets.chomp
-birthname.split(' ').reverse_each { |new_name| print new_name, ' '}
+p birthname.split(' ').reverse
+# .reverse_each{ |new_name| print new_name, ' '}
 
 # change vowels to next vowel (a,e,i,o,u) and all consonants to next
 	#(bcdfghjklmnpqrstvwxyz) consonants
