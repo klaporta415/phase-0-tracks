@@ -36,11 +36,21 @@ else
 end
 client_info[:difficult] = difficult_client
 #turn anwer into boolean somehow...
-
-
 # convert the string to appropriate data type
 # print the hash at the end
 # designer has ability to edit values
 # designer can finish program by entering "done"
 # print updated hash
 p client_info
+
+puts "Any updates? (enter 'none' to confirm)"
+designer_edit = gets.chomp
+if designer_edit == "y"
+	puts "Please enter the label you would like to change followed by the correct information."
+	client_info[gets.chomp.to_sym] = gets.chomp
+elsif designer_edit == "none"
+	designer_edit = false
+else
+	puts "Wait, does everything look correct? (y/n)"
+end
+ p client_info
