@@ -10,19 +10,19 @@
 hotel = {
 	floors: {
 		second_floor: 'Second Floor',
-		rooms2: [
-			201,
-			202,
-			203,
-			204
-		],
+		rooms2: {
+			201 => [],
+			202 => ['mom', 'dad', 'son', 'daughter'],
+			203 => [],
+			204 => ['cat lady', 'orange cat', 'black cat']
+		},
 		third_floor: 'Third Floor',
-		rooms3: [
-			301,
-			302,
-			303,
-			304
-		]
+		rooms3: {
+			301 => ['magician', 'rabbit', 'top hat'],
+			302 => ['bank robber', 'bags of money'],
+			303 => [],
+			304 => ['sister1', 'sister2']
+		}
 	},	
 	elevators: {
 		guest_elevators: 'Guest Elevators',
@@ -43,7 +43,16 @@ hotel = {
 			'bell hop',
 			'manager',
 			],
-		
+		bar: [
+			'bartender',
+			'day-drinker',
+		],
+		lounge: [
+			'business-person',
+			'guide dog',
+			'lost child',
+			'grandma'
+		]
 	}
 }
 p hotel
