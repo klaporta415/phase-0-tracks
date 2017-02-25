@@ -3,17 +3,28 @@ puts "Enter name, please:"
 # swaps first and last name
 	# need to .split to rearrange first/last name?
 birthname = gets.chomp
-p name_flip = birthname.split(' ').reverse
+# name_flip = birthname.split(' ').reverse
 # .reverse_each{ |new_name| print new_name, ' '}
-name_flip 
+# p name_flip 
 
-def letter_scramble(name)
-	 name.each{|name| vowels.next}
-	 name.each{|name| consonants.next}
-vowels = "aeiou"
-consonants = "bcdfghjklmnpqrstvwxyz"
+def letter_scramble(birthname)
+	# name_scramble = name.chars
+	vowels = "aeiou"
+	# consonants = "bcdfghjklmnpqrstvwxyz"
+	# p birthname.to_s
+	p birthname.chars
+	name_length = birthname.length
+	index = 0
+	while index > birthname.length
+		birthname[index] = vowels[(vowels.index(birthname[index]))-1]
+		# name[index] = consonants[(consonants.index(name[index]))-1]
+		index += 1
+	# agent_name.gsub
+	end
+	p birthname
 end
-p letter_scramble(name_flip)
+
+# p letter_scramble(name_flip)
 # change vowels to next vowel (a,e,i,o,u) and all consonants to next
 	#(bcdfghjklmnpqrstvwxyz) consonants
 	# any built in methods for vowels? consonants? 
