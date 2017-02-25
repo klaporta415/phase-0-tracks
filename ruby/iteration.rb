@@ -51,6 +51,7 @@
 
 #4 arrays
 # good_length = true
+
 # class Array
 
 def color_delete(arr)
