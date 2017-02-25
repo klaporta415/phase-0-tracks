@@ -22,7 +22,6 @@
 
 def fib(n)
 	arr = [0, 1]
-
 	fibonacci = ->(arr) {
 		if arr.size == n
 			arr
