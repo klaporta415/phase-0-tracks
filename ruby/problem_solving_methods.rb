@@ -19,12 +19,12 @@
 # p search_array(arr, 58)
 # p search_array(arr, 42)
 
-fib = [0, 1]
+# fib = [0, 1]
 
-fib.push(array_sum)
+# fib.push(array_sum)
 
-# def fibonacci( n )
-#   return  n  if ( 0..1 ).include? n
-#   ( fibonacci( n - 1 ) + fibonacci( n - 2 ) )
-# end
-# puts fibonacci( 5 )
+def fib( n )
+  return  n  if (0..1).include? n
+  ( fib( n - 1 ) + fib( n - 2 ))
+end
+puts fib(5)
