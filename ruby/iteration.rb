@@ -51,30 +51,31 @@
 
 #4 arrays
 # good_length = true
+# class Array
 
 def color_delete(arr)
 	# color_list_length = arr.length	
-# until arr.length == 2
-# 	arr.delete_at(-1)
-# 		yield
-	# good_length = false
-# end
-
-
-# p color_delete(array2)
-
-while color_list_length <= 2
-	good_length == true
+until arr.length == 2
 	arr.delete_at(-1)
-	until 
-		good_length ==false
-	end
+		# yield
+	# good_length = false
 end
 
+
+p color_delete(array2)
+
+# while color_list_length <= 2
+# 	good_length == true
+# 	arr.delete_at(-1)
+# 	until 
+# 		good_length ==false
+# 	end
+# end
+
 array2 = [ "orange", "green", "blue", "red", "yellow", "aqua"]
- p color_delete{|arr| array2}
+ # p color_delete{|arr| array2}
 
-
+end
 # array_size = array2.length
 # array2.each do |array2| 
 # 	puts array2 
@@ -103,4 +104,3 @@ array2 = [ "orange", "green", "blue", "red", "yellow", "aqua"]
 # p letters_numbers.select {|letter| letter > "b"}
 
 # 4 hashes
-end
