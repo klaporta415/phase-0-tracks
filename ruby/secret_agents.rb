@@ -12,17 +12,18 @@ end
 #subtract index by 1
 #find new letter represented by index - 1
 
-def decrypt(password)
-    alphabet = "abcdefghijklmnopqrstuvwxyz"
-    password_length = password.length
-    index = 0
-    while index < password_length
+# def decrypt(password)
+#     alphabet = "abcdefghijklmnopqrstuvwxyz"
+#     password_length = password.length
+#     index = 0
+#     while index < password_length
         #letter in alphabet of that index number - 1(number of of that letter in the alphabet(letter_original)-1)
-        password[index] = alphabet[(alphabet.index(password[index]))-1]
-        index += 1
-    end
-    p password
-end
+#         password[index] = alphabet[(alphabet.index(password[index]))-1]
+#         index += 1
+#     end
+#     p password
+# end
+# returns "cnopeleslie"
 
 # encrypt("hello")
 # decrypt("goodbye")
