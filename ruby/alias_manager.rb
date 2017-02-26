@@ -3,26 +3,37 @@ puts "Enter name, please:"
 # swaps first and last name
 	# need to .split to rearrange first/last name?
 birthname = gets.chomp
-# name_flip = birthname.split(' ').reverse
+name_flip = birthname.split(' ').reverse
 # .reverse_each{ |new_name| print new_name, ' '}
-# p name_flip 
+p name_flip 
+reverse_name = name_flip.join('')
+agent_name = reverse_name.chars
+vowels = "aeiou"
+consonants = "bcdfghjklmnpqrstvwxyz" 
+	agent_name.map! {|agent_name| vowels.next }
+	agent_name
+	agent_name.map! {|agent_name| consonants.next }
+# name_string = name_flip.join('')
+p agent_name
 
-def letter_scramble(birthname)
-	# name_scramble = name.chars
-	vowels = "aeiou"
-	# consonants = "bcdfghjklmnpqrstvwxyz"
-	# p birthname.to_s
-	p birthname.chars
-	name_length = birthname.length
-	index = 0
-	while index > birthname.length
-		birthname[index] = vowels[(vowels.index(birthname[index]))-1]
-		# name[index] = consonants[(consonants.index(name[index]))-1]
-		index += 1
-	# agent_name.gsub
-	end
-	p birthname
-end
+# agent_name for Leslie Knope should be Louqi Mitmoi
+
+# def letter_scramble(name_string)
+	# vowels = "aeiou"
+# 	consonants = "bcdfghjklmnpqrstvwxyz"
+# 	name_length = name_string.length
+# 	index = 0
+# 	while index < name_string.length
+# 		name_string[index] = consonants[consonants.index(name_string[index])-1]
+# 		index += 1
+# 	end
+# 	p name_string
+#  end
+
+# p letter_scramble(name_string)
+
+
+# agent_name.gsub??? how can we use gsub?
 
 # p letter_scramble(name_flip)
 # change vowels to next vowel (a,e,i,o,u) and all consonants to next
