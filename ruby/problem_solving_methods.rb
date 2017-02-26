@@ -20,20 +20,45 @@
 # p search_array(arr, 42)
 
 
-def fib(n)
-	arr = [0, 1]
-	fibonacci = ->(arr) {
-		if arr.size == n
-			arr
-		else
-			current_number, last_number = arr.last(2)
-			fibonacci.(arr + [current_number + last_number])
+# def fib(n)
+# 	arr = [0, 1]
+# 	fibonacci = ->(arr) {
+# 		if arr.size == n
+# 			arr
+# 		else
+# 			current_number, last_number = arr.last(2)
+# 			fibonacci.(arr + [current_number + last_number])
+# 		end
+# 	}
+# 	fibonacci.(arr)
+# end
+# p fib(6)
+# p fib(100)[-1]
+
+# need to loop through an array
+	# loop do?
+	# while/until?
+# 
+
+def low_to_high(array)
+	n = array.length
+	loop do
+		in_order = false
+		(n-1).times do |i|
+			if array[i] > array[i + 1]
+				array[i], array[i + 1] = array[i + 1], array[i]
+				in_order = true
+			end
 		end
-	}
-	fibonacci.(arr)
+	break if not in_order
 end
-p fib(6)
-p fib(100)[-1]
+
+# some_numbers = [23, 19, 35, 27, 16, 14, 31]
+low_numbers = [2, 4, 3, 9, 6, 7, 3, 5]
+
+# p low_to_high(some_numbers)
+p low_to_high(low_numbers)
+
 
 # bubble sort
 # def bubble_sort(array)
@@ -58,3 +83,4 @@ p fib(100)[-1]
 
 # a = [1, 4, 1, 3, 4, 1, 3, 3]
 # p bubble_sort(a)
+end
