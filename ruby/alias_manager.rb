@@ -47,7 +47,7 @@ almost_final_name
 almost_final_name.upcase
 
 final_name = almost_final_name.split.map{|i| i.capitalize}.join(' ')
-p final_name
+final_name
 
 
 top_secret_aliases[birthname] = final_name
@@ -60,9 +60,11 @@ top_secret_aliases[birthname] = final_name
 
   end
 
-puts "#{birthname} AKA #{final_name}"
-
 p top_secret_aliases
+
+top_secret_aliases.each do |birthname, final_name|
+	puts birthname + " AKA " + final_name
+end
 
 # top_secret_aliases = Hash.new()
 # top_secret_aliases = {
