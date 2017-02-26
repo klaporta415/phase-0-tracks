@@ -8,22 +8,20 @@
 # lobby to include array of staff, furniture, equipment
 
 hotel = {
-	floors: {
-		second_floor: 'Second Floor',
 		rooms2: {
-			'201' => [],
-			'202' => ['mom', 'dad', 'son', 'daughter'],
-			'203' => [],
-			'204' => ['cat lady', 'orange cat', 'black cat']
+			r201: [],
+			r202: ['mom', 'dad', 'son', 'daughter'],
+			r203: [],
+			r204: ['cat lady', 'orange cat', 'black cat']
 		},
-		third_floor: 'Third Floor',
+		
 		rooms3: {
-			'301' => ['magician', 'rabbit', 'top hat'],
-			'302' => ['bank robber', 'bags of money'],
-			'303' => [],
-			'304' => ['sister1', 'sister2']
-		}
-	},	
+			r301: ['magician', 'rabbit', 'top hat'],
+			r302: ['bank robber', 'bags of money'],
+			r303: [],
+			r304: ['sister1', 'sister2']
+		},
+
 	elevators: {
 		guest_elevators: [
 		'main lobby',
@@ -34,6 +32,7 @@ hotel = {
 			'kitchen'
 		]
 },
+
 	lobby: {
 		concierge_desk: [
 			'concierge',
@@ -55,4 +54,6 @@ hotel = {
 p hotel
 p hotel[:lobby][:concierge_desk][1]
 p hotel[:elevators][:guest_elevators]
-# p hotel[:floors][:second_floor][:rooms2]
+p hotel[:lobby][:lounge][1]
+p hotel[:rooms2][:r202]
+p hotel[:rooms3][:r302][0]
