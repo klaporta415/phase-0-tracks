@@ -40,23 +40,25 @@
 	# while/until?
 # 
 
-def low_to_high(array)
-	n = array.length
+def low_to_high(arr)
+	n = arr.length
 	loop do
 		in_order = false
 		(n-1).times do |i|
-			if array[i] > array[i + 1]
-				array[i], array[i + 1] = array[i + 1], array[i]
+			if arr[i] > arr[i + 1]
+				arr[i], arr[i + 1] = arr[i + 1], arr[i]
 				in_order = true
 			end
 		end
 	break if not in_order
 end
+arr
+end
 
-# some_numbers = [23, 19, 35, 27, 16, 14, 31]
+some_numbers = [23, 19, 35, 27, 16, 14, 31]
 low_numbers = [2, 4, 3, 9, 6, 7, 3, 5]
 
-# p low_to_high(some_numbers)
+p low_to_high(some_numbers)
 p low_to_high(low_numbers)
 
 
@@ -83,4 +85,3 @@ p low_to_high(low_numbers)
 
 # a = [1, 4, 1, 3, 4, 1, 3, 3]
 # p bubble_sort(a)
-end
