@@ -12,6 +12,7 @@
 	# use .split to separate each letter
 # produce new name .join?
 # loop through name
+top_secret_aliases = Hash.new
 
     alias_calculated = false
 
@@ -48,10 +49,22 @@ almost_final_name.upcase
 final_name = almost_final_name.split.map{|i| i.capitalize}.join(' ')
 p final_name
 
-   if birthname == "done" 
+
+top_secret_aliases[birthname] = final_name
+
+   if birthname == "quit" 
       alias_calculated = true
     else 
       alias_calculated = false
     end 
 
   end
+
+puts "#{birthname} AKA #{final_name}"
+
+p top_secret_aliases
+
+# top_secret_aliases = Hash.new()
+# top_secret_aliases = {
+	# birthname: final_name
+# }
