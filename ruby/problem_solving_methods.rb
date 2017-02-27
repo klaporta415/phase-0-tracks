@@ -35,19 +35,18 @@
 # p fib(6)
 # p fib(100)[-1]
 
+# define a method
 # need to loop through an array
-	# loop do?
-	# while/until?
-# 
+	# loop do vs while/until?
 
 def low_to_high(arr)
-	n = arr.length
+	n = arr.length # set number of items in the array
 	loop do
-		in_order = false
-		(n-1).times do |i|
-			if arr[i] > arr[i + 1]
+		in_order = false # set in_order to false so it will continue to loop until it is true
+		(n-1).times do |i| # will loop through the number of times as items in the list -1
+			if arr[i] > arr[i + 1] 
 				arr[i], arr[i + 1] = arr[i + 1], arr[i]
-				in_order = true
+				in_order = true # in_order is true so loop will stop
 			end
 		end
 	break if not in_order
@@ -61,27 +60,3 @@ low_numbers = [2, 4, 3, 9, 6, 7, 3, 5]
 p low_to_high(some_numbers)
 p low_to_high(low_numbers)
 
-
-# bubble sort
-# def bubble_sort(array)
-# 	n = array.length
-
-# 	loop do
-# 		# [1, 4, 1, 3, 4, 1, 3, 3]
-# 		swapped = false
-# 		(n-1).times do |i| #i is iterator variable
-# 			if array[i] > array [i + 1]
-# 				array[i], array[i +1] = array[i + 1], array[i]
-# 				swapped = true
-# 			end
-# 		end
-
-# 		break if not swapped
-
-# 	end
-
-# 	array
-# end
-
-# a = [1, 4, 1, 3, 4, 1, 3, 3]
-# p bubble_sort(a)
