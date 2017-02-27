@@ -49,14 +49,13 @@ p array1.select {|x| x > 3 }
 
 #4 arrays
 array2 = [ "orange", "green", "blue", "red", "yellow", "aqua"]
-  
 
- array2.each do
+array2.each do
   until array2.length == 2
   array2.delete_at(-1)
   end
 end
- p array2
+p array2
 
 
 #Hashes
