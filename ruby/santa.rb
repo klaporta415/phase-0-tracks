@@ -1,5 +1,7 @@
 class Santa
 
+	attr.
+
 	def speak
 		puts "Ho, ho, ho! Haaaappy holidays!"
 	end
@@ -41,10 +43,15 @@ class Santa
 		age.to_i + 1
 	end
 
-	def get_mad_at(reindeer_name)
-		reindeer_ranking.map{|reindeer_name| reindeer_name(-1)}
-	end
+	# def get_mad_at(reindeer_name)
+	# 	reindeer_ranking.map{|reindeer_name| reindeer_name(-1)}
+	# end
 
+end
+
+santas.each do |santa|
+	puts santa.gender
+	puts santa.ethnicity
 end
 
 # mall_santa = Santa.new
@@ -72,8 +79,8 @@ end
 # 	puts "Hi, my name is #{santas.birthname} and I identify as #{santas.gender}"
 # end
 
-get_mad_at("Dancer")
-p @reindeer_ranking
+# get_mad_at("Dancer")
+# p @reindeer_ranking
 
 # to confirm that santas were initialized with gender, ethnicity pairings
 # p santas
