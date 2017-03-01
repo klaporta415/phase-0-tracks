@@ -54,7 +54,7 @@ end
 kittens = []
 
 
-50.times do Kitten.new
+50.times do Kitten.new 
   kittens << Kitten.new
 end
 
