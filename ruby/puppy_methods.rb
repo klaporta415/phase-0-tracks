@@ -41,8 +41,8 @@ class Kitten
   end
 
   def cat_nap(hours)
-    nap_time = hours.to_i *3
-    puts "You took a #{nap_time} cat nap!"
+    nap_time = hours * 3
+    puts "You took a #{nap_time} hour cat nap!"
   end
 
   def play(toy)
@@ -53,4 +53,20 @@ end
 
 kittens = []
 
-50.times do
+
+50.times do Kitten.new
+  kittens << Kitten.new
+end
+
+p kittens
+
+kittens.each do |kitten| 
+  p kitten.cat_nap(2)
+end
+
+kittens.each do |kitten|
+  p kitten.play("yarn")
+end
+
+# We would want to improve upon this by adding names to each kitten as it iterates through the loop
+# Could interpolate names into the instance methods
