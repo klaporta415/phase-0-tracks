@@ -12,3 +12,7 @@ class Santa
 		puts "Initializing Santa instance..."
 	end
 end
+
+mall_santa = Santa.new
+mall_santa.speak
+mall_santa.eat_milk_and_cookies("chocolate chip")
