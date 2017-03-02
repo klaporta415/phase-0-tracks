@@ -1,8 +1,7 @@
 class Santa
 
-	# attr_accessor :age
-
-	# attr_accessor :gender
+	attr_reader :birthname, :ethnicity
+	attr_accessor :age, :gender, :reindeer_ranking
 
 	def speak
 		puts "Ho, ho, ho! Haaaappy holidays!"
@@ -21,40 +20,18 @@ class Santa
 		@reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
 	end
 
-	def birthname
-		@birthname
-	end
-
 	def gender_reassignment=(confirmed_gender)
 		@gender = confirmed_gender
-	end
-
-	def ethnicity
-		@ethnicity
-	end
-
-	def age
-		@age
 	end
 
 	def celebrate_birthday
 			@age = age + 1
 	end
 
-	# def age=(year_older)
-	# 	@age.celebrate_birthday = year_older
-	# end
-
-	def reindeer_ranking
-		@reindeer_ranking
-	end
-
 	def get_mad_at(reindeer_name)
-		reindeer_ranking.sort_by{|reindeer_name| reindeer_ranking.index }
-		# ranking = reindeer_name.index
-		# @reindeer_ranking = reindeer_ranking.rotate(ranking)
+		@reindeer_ranking.delete_if{|reindeer| reindeer == reindeer_name}
+		@reindeer_ranking.push(reindeer_name)
 	end
-
 end
 
 
@@ -86,10 +63,9 @@ end
 # 	puts "Hi, my name is #{santas.birthname} and I identify as #{santas.gender}"
 # end
 
-# mall_santa.celebrate_birthday
+mall_santa.celebrate_birthday
 
-# mall_santa.gender_reassignment = "genderqueer"
-# p mall_santa
+mall_santa.gender_reassignment = "genderqueer"
 
 mall_santa.get_mad_at("Dancer")
 # confirm change in ranking
