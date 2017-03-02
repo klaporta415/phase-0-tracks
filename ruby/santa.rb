@@ -15,9 +15,13 @@ class Santa
 		puts "Initializing Santa instance..."
 		@gender = gender
 		@ethnicity = ethnicity
-		@age = 0
+		@age = rand(140)
 		@reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
 	end
+
+	# def age
+		# @age = age.rand(140)
+	# end
 
 	def gender_reassignment=(confirmed_gender)
 		@gender = confirmed_gender
@@ -71,8 +75,7 @@ end
 # end
 
 # santas.each do |santa|
-# 	@gender[rand(gender.size)]
-# 	@ethnicity[rand(ethnicity.size)]
+# 	santa.age.rand(140)
 # end
 
 # to confirm that santas were initialized with gender, ethnicity pairings
