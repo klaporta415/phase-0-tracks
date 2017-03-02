@@ -43,9 +43,9 @@ santas = []
 
 birthname = ["Eli", "Teresa", "Camden", "Jose"]
 
-gender = ["GNC", "female", "trans-masculine", "agender"]
+gender = ["GNC", "female", "trans-masculine", "agender", "agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
 
-ethnicity = ["black", "latinx", "white", "Brazilian"]
+ethnicity = ["black", "latinx", "white", "Brazilian", "black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
 
 gender.length.times do |x|
 	santas << Santa.new(birthname[x], gender[x], ethnicity[x])
