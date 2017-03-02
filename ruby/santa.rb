@@ -19,10 +19,6 @@ class Santa
 		@reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
 	end
 
-	# def age
-		# @age = age.rand(140)
-	# end
-
 	def gender_reassignment=(confirmed_gender)
 		@gender = confirmed_gender
 	end
@@ -49,6 +45,8 @@ gender = ["GNC", "female", "trans-masculine", "agender", "agender", "female", "b
 
 ethnicity = ["black", "latinx", "white", "Brazilian", "black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
 
+
+# previous code putting santas into santas array with above gender, ethnicity pairings
 # gender.length.times do |x|
 # 	santas << Santa.new(gender[x], ethnicity[x])
 # end
@@ -66,17 +64,6 @@ mall_santa.get_mad_at("Dancer")
 50.times do |x|
 	santas << Santa.new(gender[rand(gender.size)], ethnicity[rand(ethnicity.size)])
 end
-
-
-# 50.times do Santa.new(gender, ethnicity) 
-# 	@gender = gender[rand(gender.size)]
-# 	@ethnicity = ethnicity[rand(ethnicity.size)]
-# 	# p santas
-# end
-
-# santas.each do |santa|
-# 	santa.age.rand(140)
-# end
 
 # to confirm that santas were initialized with gender, ethnicity pairings
 p santas
