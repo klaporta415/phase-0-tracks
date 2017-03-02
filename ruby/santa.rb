@@ -15,7 +15,6 @@ class Santa
 		puts "Initializing Santa instance..."
 		@gender = gender
 		@ethnicity = ethnicity
-		@birthname = birthname
 		@age = 0
 		@reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
 	end
@@ -46,21 +45,11 @@ gender = ["GNC", "female", "trans-masculine", "agender", "agender", "female", "b
 
 ethnicity = ["black", "latinx", "white", "Brazilian", "black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
 
-gender.length.times do |x|
-	santas << Santa.new(gender[x], ethnicity[x])
-end
+# gender.length.times do |x|
+# 	santas << Santa.new(gender[x], ethnicity[x])
+# end
 
 # **DRIVER CODE**
-
-
-# puts "Here them all shout their Santa call!"
-# santas.each do |santas|
-# 	puts "#{santas.birthname} says #{santas.speak}"
-# end
-
-# santas.each do |santas|
-# 	puts "Hi, my name is #{santas.birthname} and I identify as #{santas.gender}"
-# end
 
 mall_santa.celebrate_birthday
 
@@ -68,12 +57,25 @@ mall_santa.gender_reassignment = "genderqueer"
 
 mall_santa.get_mad_at("Dancer")
 # confirm change in ranking
-p mall_santa
+# p mall_santa
+
+50.times do |x|
+	santas << Santa.new(gender[rand(gender.size)], ethnicity[rand(ethnicity.size)])
+end
+
+
+# 50.times do Santa.new(gender, ethnicity) 
+# 	@gender = gender[rand(gender.size)]
+# 	@ethnicity = ethnicity[rand(ethnicity.size)]
+# 	# p santas
+# end
 
 # santas.each do |santa|
-# 	puts santa.gender
-# 	puts santa.ethnicity
+# 	@gender[rand(gender.size)]
+# 	@ethnicity[rand(ethnicity.size)]
 # end
 
 # to confirm that santas were initialized with gender, ethnicity pairings
-# p santas
+p santas
+# confirm 50 santas added to santa array
+p santas.length
