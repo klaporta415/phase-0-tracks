@@ -50,7 +50,9 @@ class Santa
 	end
 
 	def get_mad_at(reindeer_name)
-		reindeer_ranking.map{|reindeer| reindeer_name(-1)}
+		reindeer_ranking.sort_by{|reindeer_name| reindeer_ranking.index }
+		# ranking = reindeer_name.index
+		# @reindeer_ranking = reindeer_ranking.rotate(ranking)
 	end
 
 end
@@ -84,14 +86,14 @@ end
 # 	puts "Hi, my name is #{santas.birthname} and I identify as #{santas.gender}"
 # end
 
-mall_santa.celebrate_birthday
+# mall_santa.celebrate_birthday
 
-mall_santa.gender_reassignment = "genderqueer"
+# mall_santa.gender_reassignment = "genderqueer"
+# p mall_santa
+
+mall_santa.get_mad_at("Dancer")
+# confirm change in ranking
 p mall_santa
-
-# get_mad_at("Dancer")
-#confirm change in ranking
-# p @reindeer_ranking
 
 # santas.each do |santa|
 # 	puts santa.gender
