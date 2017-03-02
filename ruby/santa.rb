@@ -1,6 +1,6 @@
 class Santa
 
-	attr_reader :birthname, :ethnicity
+	attr_reader :ethnicity
 	attr_accessor :age, :gender, :reindeer_ranking
 
 	def speak
@@ -11,7 +11,7 @@ class Santa
 		puts "That was a good #{cookie_type}!"
 	end
 
-	def initialize(birthname, gender, ethnicity)
+	def initialize(gender, ethnicity)
 		puts "Initializing Santa instance..."
 		@gender = gender
 		@ethnicity = ethnicity
@@ -35,20 +35,19 @@ class Santa
 end
 
 
-mall_santa = Santa.new("Charlie", "male", "Irish")
+mall_santa = Santa.new("male", "Irish")
 mall_santa.speak
 mall_santa.eat_milk_and_cookies("chocolate chip")
 
 santas = []
 
-birthname = ["Eli", "Teresa", "Camden", "Jose"]
 
 gender = ["GNC", "female", "trans-masculine", "agender", "agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
 
 ethnicity = ["black", "latinx", "white", "Brazilian", "black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
 
 gender.length.times do |x|
-	santas << Santa.new(birthname[x], gender[x], ethnicity[x])
+	santas << Santa.new(gender[x], ethnicity[x])
 end
 
 # **DRIVER CODE**
