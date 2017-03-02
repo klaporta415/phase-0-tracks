@@ -85,8 +85,9 @@ end
 # end
 
 mall_santa.celebrate_birthday
-p mall_santa
 
+mall_santa.gender_reassignment = "genderqueer"
+p mall_santa
 
 # get_mad_at("Dancer")
 #confirm change in ranking
