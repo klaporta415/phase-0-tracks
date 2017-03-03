@@ -8,7 +8,12 @@
 # output: [what data type goes here, array or hash?]
 
 def create_list(groceries)
-	groceries.split(' ')
+	list = groceries.split(' ')
+	grocery_list = {}
+	list.each do |x|
+		grocery_list[x] = 1
+	end
+	grocery_list
 end	
 
 p create_list("carrots apples cereal pizza")
@@ -17,6 +22,11 @@ p create_list("carrots apples cereal pizza")
 # input: list, item name, and optional quantity
 # steps: access items by index
 # output: hash with keys being array items
+
+def add_item(list, item, quantity)
+	list = []
+end
+
 
 # Method to remove an item from the list
 # input: item name
