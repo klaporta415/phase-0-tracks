@@ -29,9 +29,7 @@ p list = create_list("carrots apples cereal pizza")
 # def add_item(list, item, quantity)
 #     list[item] = quantity
 # end
-
-# add_item(list, "bananas", 3)
-# p list
+# removed from program due to redundancy
 
 # Method to remove an item from the list
 # input: item name
@@ -44,7 +42,7 @@ def remove_item(list, item)
 end    
 
 remove_item(list, "carrots")
-p list
+# p list
 
 # Method to update the quantity of an item
 # input: key of the value (grocery item)
@@ -56,7 +54,7 @@ def update_quantity(list, item, quantity)
 end
 
 update_quantity(list, "pizza", 3)
-p list
+# p list
 
 # Method to print a list and make it look pretty
 # input: hash
@@ -68,3 +66,43 @@ def print_list(list)
        puts "Get #{quantity} #{item}"
    end
 end
+
+print_list(list)
+
+# Release 4: Reflect
+# What did you learn about pseudocode from working on this challenge?
+	# The pseudocode given to us in the module was way more detailed 
+	# than the pseudocode I've been writing. It definitely makes its
+	# easier to stick to your plan and go through writing the code
+	# piece by piece. I'd like to be more specific/intentional moving
+	# forward
+
+# What are the tradeoffs of using arrays and hashes for this challenge?
+	# We decided to use a hash because we thought it would be easier to 
+	# access and manipulate our values, especially since they kind of 
+	# needed to be paired anyhow. Using an array to make the list was
+	# great because it separates the items into individual strings that
+	# we could access and add to the hash. They were both useful, just in
+	# different ways.
+
+# What does a method return?
+	# A method returns an object like a string, boolean, integer. Sometimes
+	# a method will return nil.
+
+# What kind of things can you pass into methods as arguments?
+	# You can pass variables, integers, other methods into methods as
+	# arguments.
+
+# How can you pass information between methods?
+	# Information can be passed in between methods that are part of the
+	# same class. In the program we made here, we had to define a variable
+	# outside of our method in order for it to be used in the following 
+	# methods.
+
+# What concepts were solidified in this challenge, and what concepts are still confusing?
+	# This challenge helped solidify a lot about how methods work in general as
+	# well as using methods and arrays. It was especially helpful going over how we can
+	# use our methods to affect our hash. I find myself forgetting some simple
+	# concepts so this challenge definitely solidified that I need to keep reviewing 
+	# material from previous weeks to keep my skills up so that I can keep adding
+	# to them.
