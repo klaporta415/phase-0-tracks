@@ -3,6 +3,23 @@
 # each time user inputs word to guess, new instance created
 class WordGuesser
 
+	attr_accessor :word
+
+	def initialize(word)
+		# get_word(word)
+		@word = word
+	end
+
+	# def get_word(word_input)
+	# 	word_input = gets.chomp
+	# end
+	# @word
+
+	def make_lines(word)
+		dashes = word.length
+		dashes.times('_ ')
+	end
+
 end
 
 
@@ -20,3 +37,8 @@ end
 # restrict number of guesses (related to word length)
 # IF wins in n guesses, print congratulatory message
 # ELSE loses, print taunting message
+
+
+# puts "Welcome to Word Guesser! Enter a word:"
+# word = gets.chomp
+# word_getter(word)
