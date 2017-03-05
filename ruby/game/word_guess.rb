@@ -7,28 +7,42 @@ class WordGuesser
 	attr_accessor :word_input
 
 	def initialize(word)
-		@word_length = word.downcase.length
+		@word_length = word.length
 		@update = "_ " * word.length
 		@guesses = word.length + 2
 		@letters_guessed = []
+		@word = word
 	end
 
 	def get_word(word_input)
 		word_input = gets.chomp
+		word = word_input
 		@word = word
 	end
 
 	def make_lines(word)
 		dashes = word.length
 		making_blanks = dashes.times('_ ')
+		puts make_blanks
+		# puts @word
 	end
+		# @word
+
 
 end
 
 puts "Enter a word for your opponent to guess:"
+@word = gets.chomp
+# # get_word(word_input)
 
-game = WordGuesser.new(word)
-get_word(word_input)
+game = WordGuesser.new(@word)
+
+make_lines(@word)
+
+
+
+
+# get_word(word_input)
 
 # need module for game? classes are player1 that gives word and
 	# player2 that is guessing?
