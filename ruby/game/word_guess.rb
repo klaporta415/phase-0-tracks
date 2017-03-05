@@ -1,7 +1,9 @@
 # create class for game
 # initialize game instances
 # each time user inputs word to guess, new instance created
-class WordGuesser
+module WordGuesser
+
+class PlayerOne
 
 	attr_accessor :word
 	attr_accessor :word_input
@@ -27,17 +29,15 @@ class WordGuesser
 		# puts @word
 	end
 		# @word
-
-
 end
+class PlayerTwo
+  
+  def letter_bank(letters)
+    letters_guessed << letters
+  end
+  
+  def 
 
-puts "Enter a word for your opponent to guess:"
-@word = gets.chomp
-# # get_word(word_input)
-
-game = WordGuesser.new(@word)
-
-make_lines(@word)
 
 
 
