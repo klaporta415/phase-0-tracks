@@ -3,7 +3,7 @@
 # each time user inputs word to guess, new instance created
 class WordGuesser
 
-	attr_accessor :word, :word_input, :mystery_word, :guesses, :letter
+	attr_accessor :word, :word_input, :mystery_word, :guesses, :letter, :word_array, :letters_guessed
 
 	def new_game(word)
 		@word_length = word.length
@@ -12,6 +12,7 @@ class WordGuesser
 		@letters_guessed = []
 		@word = word
 		@mystery_word = mystery_word
+		@letter = letter
 		@word_array = @word.split(' ')
 	end
 
@@ -27,12 +28,34 @@ class WordGuesser
 	end
   
   	def letter_bank(letter)
+  		letters_guessed = []
     	letters_guessed << letter
   	end
 
-  	def guessing_letters (letter)
-  		@word.
+  	def guessing_letters (word)
+  		@word_array = @word.split(' ')
   	end
+
+  	def update_blanks(letter)
+  		# won = true
+
+  		# Print letters accordingly
+  		@word_array.each do |letter|
+    		if @word_array.include? letter
+      			print @letter
+    		else
+      			@word_array.each print '_ '
+      			# @letters_guessed << @letter
+
+      		# won = false
+    	end
+  end
+
+  # Insert a line break
+  # puts " "
+
+  # return won
+end
 
 end 
 
@@ -45,12 +68,14 @@ game.new_game(@word)
 
 game.make_lines(@word)
 
-puts "Player 2, above is the myster word. 
+puts "Player 2, here is your mystery word. 
 Guess one letter at a time. 
 You have #{game.guesses} guesses."
 
-guess = gets.chomp
-
+@letter = gets.chomp
+game.update_blanks(@letter)
+game.letter_bank(@letter)
+p @letters_guessed
 
 # need module for game? classes are player1 that gives word and
 	# player2 that is guessing?
