@@ -7,10 +7,11 @@
 // output stored in new variable
 
 function reverse(string) {
-	var arr = string.split;
-	var wordReveresed = [].concat(arr).reverse();
+	var arr = string.split();
+	var arrReversed = arr.reverse();
+	var wordReversed = arrReversed.concat();
 	// var wordReveresed = concat(reverseArr);
-	return wordReveresed
+	return wordReversed
 }
 
 console.log(reverse("shit"));
