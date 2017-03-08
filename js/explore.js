@@ -6,12 +6,20 @@
 // output: that string written backward/reversed
 // output stored in new variable
 
-function reverse(string) {
-	var arr = string.split();
-	var arrReversed = arr.reverse();
-	var wordReversed = arrReversed.concat();
-	// var wordReveresed = concat(reverseArr);
-	return wordReversed
+function reverseWord(string) {
+	return string.split('').reverse().join('');
 }
 
-console.log(reverse("shit"));
+// Test string to validate function working properly
+// console.log(reverseWord("I don't understand what's happening."));
+
+
+var reversed = reverseWord(" oh no! ");
+
+var string = "Your mom goes to college."
+
+var iThinkIGetIt = true
+
+if (iThinkIGetIt) {
+	console.log(reverseWord(string))
+}
