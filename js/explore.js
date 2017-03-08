@@ -10,4 +10,16 @@ function reverseWord(string) {
 	return string.split('').reverse().join('');
 }
 
-console.log(reverseWord("I don't understand what's happening."));
+// Test string to validate function working properly
+// console.log(reverseWord("I don't understand what's happening."));
+
+
+var reversed = reverseWord(" oh no! ");
+
+var string = "Your mom goes to college."
+
+var iThinkIGetIt = true
+
+if (iThinkIGetIt) {
+	console.log(reverseWord(string))
+}
