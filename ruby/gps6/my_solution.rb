@@ -11,13 +11,15 @@ require_relative 'state_data'
 
 class VirusPredictor
 
+  #creates new instance, defines arguments of the class
   def initialize(state_of_origin, population_density, population)
     @state = state_of_origin
     @population = population
     @population_density = population_density
   end
 
-
+# makes attributes readable outside of class
+  #allows both methods to run in 1 method
   def virus_effects
     speed_of_spread
     predicted_deaths
@@ -25,6 +27,7 @@ class VirusPredictor
 
   private
 
+# predicts # of deaths based on population density and rounds outcome
   def predicted_deaths
     # predicted deaths is solely based on population density
     if @population_density >= 200
@@ -115,5 +118,7 @@ report
   # defined in the initialize method.
 
 # What concept did you most solidify in this challenge?
-  # 
+  # This challenge was a good review of a lot of the concepts we've learned in Ruby so far. This challenge,
+  # specifically refactoring the methods helped solidify instance variables and how they are accessible
+  # throughout the class. 
 
