@@ -11,13 +11,15 @@ require_relative 'state_data'
 
 class VirusPredictor
 
+  #creates new instance, defines arguments of the class
   def initialize(state_of_origin, population_density, population)
     @state = state_of_origin
     @population = population
     @population_density = population_density
   end
 
-
+# makes attributes readable outside of class
+  #allows both methods to run in 1 method
   def virus_effects
     speed_of_spread
     predicted_deaths
@@ -25,6 +27,7 @@ class VirusPredictor
 
   private
 
+# predicts # of deaths based on population density and rounds outcome
   def predicted_deaths
     # predicted deaths is solely based on population density
     if @population_density >= 200
@@ -74,6 +77,7 @@ end
 
 # DRIVER CODE
  # initialize VirusPredictor for each state
+
 def report
     STATE_DATA.each do |state, population_stats|
       state = VirusPredictor.new(state, population_stats[:population_density], population_stats[:population])
@@ -107,7 +111,8 @@ report
   # files.
 
 # What are some ways to iterate through a hash?
-  # We used the .each method to iterate through the STATE_DATA hash with the state name keys. 
+  # We used the .each method to iterate through the STATE_DATA hash with the state name keys. There
+  # are other built-in methods that iterate through your hash like .include? and .map
 
 # When refactoring virus_effects, what stood out to you about the variables, if anything?
   # Even before refactoring, we noticed that the arguments were repetitive. We later figured out
@@ -115,5 +120,7 @@ report
   # defined in the initialize method.
 
 # What concept did you most solidify in this challenge?
-  # 
+  # This challenge was a good review of a lot of the concepts we've learned in Ruby so far. This challenge,
+  # specifically refactoring the methods helped solidify instance variables and how they are accessible
+  # throughout the class. 
 
