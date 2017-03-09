@@ -77,6 +77,7 @@ end
 
 # DRIVER CODE
  # initialize VirusPredictor for each state
+
 def report
     STATE_DATA.each do |state, population_stats|
       state = VirusPredictor.new(state, population_stats[:population_density], population_stats[:population])
@@ -110,7 +111,8 @@ report
   # files.
 
 # What are some ways to iterate through a hash?
-  # We used the .each method to iterate through the STATE_DATA hash with the state name keys. 
+  # We used the .each method to iterate through the STATE_DATA hash with the state name keys. There
+  # are other built-in methods that iterate through your hash like .include? and .map
 
 # When refactoring virus_effects, what stood out to you about the variables, if anything?
   # Even before refactoring, we noticed that the arguments were repetitive. We later figured out
