@@ -11,9 +11,31 @@ function longestString (array) {
 		}
 	}
 }
-
 phrases = ["long phrase","longest phrase","longer phrase"]
 
-console.log(longestString(phrases))
+for (var i = 0, length = phrases.length; i < length; i++) {
+	console.log(longestString(phrases[i]));
+}
+
+
+// function will find length of strings
+// driver code will call forEach function 
+
+// for (var i = 0, length = array.length; i < length; i++) {
+// 	biggestWord(array[i]);
+// }
+
+
+// function longestString (array) {
+//  	array.forEach(length);
+// 	}
+
+
+
+
+
+
+
+// console.log(longestString(phrases))
 
 // returning number of shorest string?
