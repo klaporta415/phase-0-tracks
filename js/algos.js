@@ -20,4 +20,16 @@ phrases = ["long phrase","longest phrase","longer phrase"]
 
 console.log(longestString(phrases))
 
-// returning length of longest string?
+// Function: compares two objects to see if they share key-value pair
+// Input: Two objects
+// Output: return value is true or false
+
+function objectCompare (object1, object2) {
+	var comparison = Object.is(object1, object2)
+	console.log(comparison)
+}
+// Objects made to test comparison function
+steve = {name: "Steven", age: 54}
+tamir = {name: "Tamir", age: 54}
+
+objectCompare(steve, tamir)
