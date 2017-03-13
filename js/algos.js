@@ -3,39 +3,21 @@
 // output: Longest (most characters) string in array
 
 function longestString (array) {
-	var biggestWord = 0;
+	var longestWord = 0;
+	// var biggestWord;
 	for (var i = 0; i < array.length; i++) {
-		if(array[i].length > biggestWord) {
-			biggestWord = array[i].length;
-			return biggestWord
+		if(array[i].length > longestWord) {
+			longestWord = array[1];
 		}
 	}
+return longestWord
 }
+
 phrases = ["long phrase","longest phrase","longer phrase"]
-
-for (var i = 0, length = phrases.length; i < length; i++) {
-	console.log(longestString(phrases[i]));
-}
-
 
 // function will find length of strings
 // driver code will call forEach function 
 
-// for (var i = 0, length = array.length; i < length; i++) {
-// 	biggestWord(array[i]);
-// }
+console.log(longestString(phrases))
 
-
-// function longestString (array) {
-//  	array.forEach(length);
-// 	}
-
-
-
-
-
-
-
-// console.log(longestString(phrases))
-
-// returning number of shorest string?
+// returning length of longest string?
