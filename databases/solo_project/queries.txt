@@ -1,0 +1,34 @@
+Display the information in one table (either table is fine).
+
+sqlite> SELECT * FROM family_members;
+1|Kaley|2
+2|Chloe|2
+3|Pam|1
+4|Kim|1
+5|Rich|3
+6|Nick|3
+sqlite>
+
+Update an item that meets some condition (you can choose a condition that makes sense).
+
+sqlite> UPDATE family_members SET name="Mackenzie" WHERE name="Rich";
+sqlite> SELECT * FROM family_members;
+1|Kaley|2
+2|Chloe|2
+3|Pam|1
+4|Kim|1
+5|Mackenzie|3
+6|Nick|3
+sqlite>
+
+Display the information in both tables using one query.
+
+sqlite> SELECT * FROM family_members INNER JOIN family_origin ON family_origin_id=family_origin.id;
+1|Kaley|2|2|La Porta
+2|Chloe|2|2|La Porta
+3|Pam|1|1|Kusta
+4|Kim|1|1|Kusta
+5|Mackenzie|3|3|Rot
+6|Nick|3|3|Rot
+sqlite>
+
