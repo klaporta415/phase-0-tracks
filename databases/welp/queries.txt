@@ -12,38 +12,7 @@ Amir's Towing|2|Bad service|Amir|Shogun
 Grundy Hollow Wedding Chapel|1|Pretty sure the server is a death eater|Harry|Potter
 Beagul Night Club|3|not bad|Bob|Builder
 
-sqlite> SELECT * FROM reviews, businesses WHERE business_id=1 AND businesses.Name="Grundy Hollow Wedding Chapel";
-4|1|Pretty sure the server is a death eater|1|5|1|Grundy Hollow Wedding Chapel
-2|5|Jolley good|1|2|1|Grundy Hollow Wedding Chapel
-sqlite>
-
-sqlite> SELECT * FROM reviews, businesses WHERE business_id=1 or name="Grundy Hollow Wedding Chapel";
-1|3|Good Food! Poor service.|2|1|1|Grundy Hollow Wedding Chapel
-2|5|Jolley good|1|2|1|Grundy Hollow Wedding Chapel
-2|5|Jolley good|1|2|2|Amir's Towing
-2|5|Jolley good|1|2|3|Beagul Night Club
-2|5|Jolley good|1|2|4|Lotus Yoga
-3|2|Bad service|2|2|1|Grundy Hollow Wedding Chapel
-4|1|Pretty sure the server is a death eater|1|5|1|Grundy Hollow Wedding Chapel
-4|1|Pretty sure the server is a death eater|1|5|2|Amir's Towing
-4|1|Pretty sure the server is a death eater|1|5|3|Beagul Night Club
-4|1|Pretty sure the server is a death eater|1|5|4|Lotus Yoga
-5|3|not bad|3|3|1|Grundy Hollow Wedding Chapel
-sqlite>
-
-sqlite> SELECT * FROM reviews, businesses, users WHERE business_id=1 AND businesses.Name="Grundy Hollow Weddi
-4|1|Pretty sure the server is a death eater|1|5|1|Grundy Hollow Wedding Chapel|1|Bob|Marley
-2|5|Jolley good|1|2|1|Grundy Hollow Wedding Chapel|1|Bob|Marley
-4|1|Pretty sure the server is a death eater|1|5|1|Grundy Hollow Wedding Chapel|2|Amir|Shogun
-2|5|Jolley good|1|2|1|Grundy Hollow Wedding Chapel|2|Amir|Shogun
-4|1|Pretty sure the server is a death eater|1|5|1|Grundy Hollow Wedding Chapel|3|Bob|Builder
-2|5|Jolley good|1|2|1|Grundy Hollow Wedding Chapel|3|Bob|Builder
-4|1|Pretty sure the server is a death eater|1|5|1|Grundy Hollow Wedding Chapel|4|Yoda|Force
-2|5|Jolley good|1|2|1|Grundy Hollow Wedding Chapel|4|Yoda|Force
-4|1|Pretty sure the server is a death eater|1|5|1|Grundy Hollow Wedding Chapel|5|Harry|Potter
-2|5|Jolley good|1|2|1|Grundy Hollow Wedding Chapel|5|Harry|Potter
-4|1|Pretty sure the server is a death eater|1|5|1|Grundy Hollow Wedding Chapel|6|James|Potter
-2|5|Jolley good|1|2|1|Grundy Hollow Wedding Chapel|6|James|Potter
-4|1|Pretty sure the server is a death eater|1|5|1|Grundy Hollow Wedding Chapel|7|Lili|Potter
-2|5|Jolley good|1|2|1|Grundy Hollow Wedding Chapel|7|Lili|Potter
+sqlite> SELECT * FROM reviews LEFT JOIN users ON reviews.user_id=users.id INNER JOIN businesses ON reviews.business_id=businesses.id WHERE businesses.Name = "Grundy Hollow Wedding Chapel";
+2|5|Jolley good|1|2|2|Amir|Shogun|1|Grundy Hollow Wedding Chapel
+4|1|Pretty sure the server is a death eater|1|5|5|Harry|Potter|1|Grundy Hollow Wedding Chapel
 sqlite>
