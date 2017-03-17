@@ -32,3 +32,8 @@ sqlite> SELECT * FROM family_members INNER JOIN family_origin ON family_origin_i
 6|Nick|3|3|Rot
 sqlite>
 
+Display a narrower selection of columns (fewer columns than all of them, in other words) from both tables using one query.
+
+
+
+Delete an item that meets some condition (you can choose a condition that makes sense).
