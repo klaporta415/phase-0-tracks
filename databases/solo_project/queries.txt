@@ -34,6 +34,21 @@ sqlite>
 
 Display a narrower selection of columns (fewer columns than all of them, in other words) from both tables using one query.
 
-
+sqlite> SELECT name, family_of_origin FROM family_members INNER JOIN family_origin ON family_origin.id=family_members.family_origin_id;
+Kaley|La Porta
+Chloe|La Porta
+Pam|Kusta
+Kim|Kusta
+Mackenzie|Rot
+Nick|Rot
+sqlite>
 
 Delete an item that meets some condition (you can choose a condition that makes sense).
+
+sqlite> DELETE FROM family_members WHERE family_origin_id=3;
+sqlite> SELECT * FROM family_members;
+1|Kaley|2
+2|Chloe|2
+3|Pam|1
+4|Kim|1
+sqlite>
