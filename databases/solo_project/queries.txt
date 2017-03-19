@@ -52,3 +52,29 @@ sqlite> SELECT * FROM family_members;
 3|Pam|1
 4|Kim|1
 sqlite>
+
+Trying different types of joins:
+
+CROSS JOIN:
+sqlite> SELECT name, family_of_origin FROM family_members CROSS JOIN family_origin;
+Kaley|Kusta
+Kaley|La Porta
+Kaley|Rot
+Chloe|Kusta
+Chloe|La Porta
+Chloe|Rot
+Pam|Kusta
+Pam|La Porta
+Pam|Rot
+Kim|Kusta
+Kim|La Porta
+Kim|Rot
+sqlite>
+
+LEFT OUTER JOIN:
+sqlite> SELECT name, family_of_origin FROM family_members LEFT OUTER JOIN family_origin ON family_members.family_origin_id=family_origin.id;
+Kaley|La Porta
+Chloe|La Porta
+Pam|Kusta
+Kim|Kusta
+sqlite>
