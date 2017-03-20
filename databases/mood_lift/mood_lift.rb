@@ -52,3 +52,9 @@ else
 end
 
 log_moods(moody, mood, date)
+
+# Things to improve upon:
+# Get better, more quotes
+# Learn how to use the date/time funciton in SQL to automatically enter current date/time
+# Add method for user to view logs
+	# could make it so view can view logs by month if desired
