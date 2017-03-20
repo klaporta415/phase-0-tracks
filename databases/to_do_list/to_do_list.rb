@@ -19,7 +19,7 @@ puts "What do you want to name your to do list?"
 list_name = gets.chomp
 
 create_new_list = <<-NEW 
-	CREATE TABLE IF NOT EXISTS list_name(
+	CREATE TABLE IF NOT EXISTS #{list_name}(
 		id INTEGER PRIMARY KEY,
 		task VARCHAR(255)
 	)
