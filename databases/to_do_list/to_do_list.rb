@@ -26,3 +26,18 @@ create_new_list = <<-NEW
 NEW
 
 to_do.execute(create_new_list)
+
+puts "Great! Now add some items to your list: "
+item = gets.chomp
+
+def add_items
+	done = false
+	if !done 
+		<<-ITEMS 
+		INSERT INTO #{list_name} (task) VALUES #{item}
+		ITEMS
+	else item == "quit"
+	done = true
+end
+
+to_do.execute(add_items)
