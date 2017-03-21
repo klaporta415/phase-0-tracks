@@ -30,3 +30,7 @@ What is the difference between a GET request and a POST request? When might each
 
 
 Optional bonus question: What is a cookie (the technical kind, not the delicious kind)? How does it relate to HTTP requests?
+
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies
+https://www.nczonline.net/blog/2009/05/05/http-cookies-explained/
+https://msdn.microsoft.com/en-us/library/windows/desktop/aa384321(v=vs.85).aspx
