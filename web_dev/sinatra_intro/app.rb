@@ -53,3 +53,12 @@ get '/contact' do
   Phone: 555-555-5555<br>
   Email: contact@students.org<br>"
 end
+
+get '/great_job' do 
+  name = params[:name]
+  if name 
+    "Good job, #{name}!"
+  else
+    "Good job!"
+end  
+end
