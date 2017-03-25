@@ -54,6 +54,7 @@ get '/contact' do
   Email: contact@students.org<br>"
 end
 
+# GET route that takes query parameter
 get '/great_job' do 
   name = params[:name]
   if name 
@@ -62,3 +63,12 @@ get '/great_job' do
     "Good job!"
 end  
 end
+
+# Route using route parameters to add two numbers and respond with result
+
+get '/calculate/:x/:y' do
+  addition = params[:x].to_i + params[:y].to_i
+  "#{addition}"
+end
+
+
