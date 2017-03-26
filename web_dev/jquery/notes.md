@@ -11,3 +11,7 @@ Resource Search:
 
 - I plan on testing what I learn as I go - with each new concept/category
 - I think taking breaks will be important but it is a short period of time so I will try to limit. One or two 5-10 min breaks.
+
+Helpful Resources:
+- LearnCode jQuery Tutorial (1-4 videos)
+	https://www.youtube.com/watch?v=hMxGhHNOkCU
