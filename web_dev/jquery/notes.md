@@ -15,3 +15,10 @@ Resource Search:
 Helpful Resources:
 - LearnCode jQuery Tutorial (1-4 videos)
 	https://www.youtube.com/watch?v=hMxGhHNOkCU
+
+What worked/didn't work:
+- I found the youtube tutorials I found to be pretty helpful because they were quick and covered the basics
+- Going over some other resources was helpful 
+- I found some great cheat sheets that I will definitely use in the future
+- I think actually trying to make something using jQuery was the most useful thing I did
+- It seems best to combine resources instead of picking one and really digging into it
