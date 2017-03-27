@@ -1,9 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-</head>
+	<title>Lou's Website</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script type="text/javascript"></script>
+</head> 
 <body>
 
+<h1>Lou's Page</h1>
+
+<p>Thank you 4 vizits my page.</p>
+<p>Now I tellz you bout my life.</p>
+
+<div id='timeline'>
+	<h3>Majer Lyfe Events</h3>
+	<ul>
+		<li>Get born in Cairo, Egypts</li>
+		<li>Moves to Chicago, America</li>
+		<li>Lives wit Larry 4 little wile</li>
+		<li>Moves in wid my moms</li>
+	</ul>
+</div>
+
+<div id='likes'>
+	<h3>Likes</h3>
+	<ul>
+		<li>Meat treats</li>
+		<li>Cheezes</li>
+		<li>Go to the outside</li>
+		<li>Playz with Gem</li>
+	</ul>
+</div>
+	<script>
+
+		$(document).ready(function() {
+			$("#likes").hide(500).show(750);
+			$("#likes").slideUp(500).slideDown(500);
+			$("#likes").fadeToggle(300).fadeToggle(500);
+			$("#timeline").css({color: 'blue', fontWeight: 'bold'});
+		})
+	</script>
 </body>
 </html>
